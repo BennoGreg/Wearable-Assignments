@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="j9F-r7-dUl">
+                                <rect key="frame" x="0.0" y="447" width="414" height="415"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="415" id="FhI-I5-Zyo"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PredictionCell" textLabel="43x-Nl-0pU" detailTextLabel="aGh-bJ-3WI" rowHeight="50" style="IBUITableViewCellStyleValue1" id="qRA-N3-Ido">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qRA-N3-Ido" id="Alw-zu-SNg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43x-Nl-0pU">
+                                                    <rect key="frame" x="20" y="18" width="25" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aGh-bJ-3WI">
+                                                    <rect key="frame" x="350" y="18" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eKx-8Q-rSd">
+                                <rect key="frame" x="345" y="116" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Measurement/Prediction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfZ-ig-zWc">
+                                <rect key="frame" x="20" y="114" width="319" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUQ-7o-LGD">
+                                <rect key="frame" x="246" y="181" width="148" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="4YH-eu-QDg"/>
+                                    <constraint firstAttribute="width" constant="148" id="IXf-U2-uie"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Measurement/ Prediction"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TN1-Qa-kyx">
+                                <rect key="frame" x="246" y="311" width="148" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="8bv-vN-jmF"/>
+                                    <constraint firstAttribute="width" constant="148" id="daZ-G7-eKX"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stop Measurement / Prediction"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8r-XA-J6X">
+                                <rect key="frame" x="20" y="181" width="148" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="GJC-jx-gGc"/>
+                                    <constraint firstAttribute="height" constant="67" id="oRe-0f-Heg"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Record"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUn-Pg-MI9">
+                                <rect key="frame" x="20" y="311" width="148" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="NS7-OO-H1F"/>
+                                    <constraint firstAttribute="height" constant="67" id="kZW-hp-wye"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Stop Recording and Predict"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-zg-TZT">
+                                <rect key="frame" x="168" y="408" width="81" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBD-v5-sqv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eKx-8Q-rSd" secondAttribute="trailing" constant="20" id="3Pa-1a-TtR"/>
+                            <constraint firstItem="eKx-8Q-rSd" firstAttribute="leading" secondItem="HfZ-ig-zWc" secondAttribute="trailing" constant="6" id="49b-fg-lgl"/>
+                            <constraint firstItem="EGq-zg-TZT" firstAttribute="top" secondItem="HfZ-ig-zWc" secondAttribute="bottom" constant="264" id="4ux-PY-sdN"/>
+                            <constraint firstItem="HfZ-ig-zWc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="63l-Jy-pNR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TN1-Qa-kyx" secondAttribute="trailing" constant="20" id="CBJ-mn-UyP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cUQ-7o-LGD" secondAttribute="trailing" constant="20" id="Ma7-SJ-tZS"/>
+                            <constraint firstItem="TN1-Qa-kyx" firstAttribute="top" secondItem="cUQ-7o-LGD" secondAttribute="bottom" constant="63" id="NHI-ca-TjC"/>
+                            <constraint firstItem="DUn-Pg-MI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Osf-DY-e56"/>
+                            <constraint firstItem="j9F-r7-dUl" firstAttribute="top" secondItem="EGq-zg-TZT" secondAttribute="bottom" constant="8" symbolic="YES" id="PY5-le-38I"/>
+                            <constraint firstItem="EGq-zg-TZT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168" id="Qv3-25-Wqr"/>
+                            <constraint firstItem="j9F-r7-dUl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RLs-VT-rTh"/>
+                            <constraint firstItem="eKx-8Q-rSd" firstAttribute="leading" secondItem="HfZ-ig-zWc" secondAttribute="trailing" constant="6" id="WWU-Av-6ny"/>
+                            <constraint firstItem="j9F-r7-dUl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Yo2-jZ-SIb"/>
+                            <constraint firstItem="eKx-8Q-rSd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="Yvy-0r-qtu"/>
+                            <constraint firstItem="cUQ-7o-LGD" firstAttribute="top" secondItem="eKx-8Q-rSd" secondAttribute="bottom" constant="34" id="ZAu-lo-FY7"/>
+                            <constraint firstItem="DUn-Pg-MI9" firstAttribute="top" secondItem="s8r-XA-J6X" secondAttribute="bottom" constant="63" id="cE5-MH-iJD"/>
+                            <constraint firstItem="j9F-r7-dUl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f4d-60-1jJ"/>
+                            <constraint firstItem="s8r-XA-J6X" firstAttribute="top" secondItem="HfZ-ig-zWc" secondAttribute="bottom" constant="37" id="fwj-aY-rkL"/>
+                            <constraint firstItem="s8r-XA-J6X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jDG-hB-prs"/>
+                            <constraint firstItem="HfZ-ig-zWc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pYq-jR-cMO"/>
+                            <constraint firstItem="cUQ-7o-LGD" firstAttribute="leading" secondItem="s8r-XA-J6X" secondAttribute="trailing" constant="78" id="rOf-FS-l3u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EGq-zg-TZT" secondAttribute="trailing" constant="165" id="sX1-kF-WdX"/>
+                            <constraint firstItem="TN1-Qa-kyx" firstAttribute="leading" secondItem="DUn-Pg-MI9" secondAttribute="trailing" constant="78" id="sqR-fA-dyH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="liveMeasure" destination="eKx-8Q-rSd" id="ulS-dC-H9K"/>
+                        <outlet property="predictionTableView" destination="j9F-r7-dUl" id="o1o-LC-Emb"/>
+                        <outlet property="recordButton" destination="s8r-XA-J6X" id="rq9-uj-7VE"/>
+                        <outlet property="startMeasurement" destination="cUQ-7o-LGD" id="h4O-AE-O9w"/>
+                        <outlet property="stopMeasurement" destination="TN1-Qa-kyx" id="Wyc-qN-B4v"/>
+                        <outlet property="stopRecordButton" destination="DUn-Pg-MI9" id="7ii-0S-lOG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

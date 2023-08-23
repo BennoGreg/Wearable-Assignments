@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WearableAssignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAK-Z9-yu2">
+                                <rect key="frame" x="20" y="72" width="374" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="phk-uo-4Jb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ckC-xn-QU8">
+                                <rect key="frame" x="343" y="284" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Count Activated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpS-In-Pv3">
+                                <rect key="frame" x="20" y="286" width="317" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZR-Nh-S5b">
+                                <rect key="frame" x="129" y="342" width="156" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="7GI-K2-lXK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Reset Count"/>
+                                <connections>
+                                    <action selector="resetCount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mb-cq-Y7r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbu-ui-hJG">
+                                <rect key="frame" x="151" y="440" width="112" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Afu-IU-Pqz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save as CSV"/>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUU-Xp-Wjy">
+                                <rect key="frame" x="158.5" y="544" width="97" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="qFK-aS-9Pw"/>
+                                    <constraint firstAttribute="width" constant="97" id="wLe-Ed-y3g"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Load data2"/>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gga-Fd-LHJ">
+                                <rect key="frame" x="20" y="544" width="94" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="FUh-mO-jaH"/>
+                                    <constraint firstAttribute="width" constant="94" id="smd-Zg-e74"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Load data1"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3s-j8-DML">
+                                <rect key="frame" x="299" y="544" width="93" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="mFq-46-p7l"/>
+                                    <constraint firstAttribute="width" constant="93" id="qgY-7u-hnf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="load data3"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e3s-j8-DML" secondAttribute="trailing" constant="22" id="065-Pu-bXQ"/>
+                            <constraint firstItem="ckC-xn-QU8" firstAttribute="leading" secondItem="vpS-In-Pv3" secondAttribute="trailing" constant="6" id="0SR-dK-XGB"/>
+                            <constraint firstItem="TUU-Xp-Wjy" firstAttribute="leading" secondItem="gga-Fd-LHJ" secondAttribute="trailing" constant="44.5" id="1Bh-hw-9jR"/>
+                            <constraint firstItem="gga-Fd-LHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="32O-DA-vHR"/>
+                            <constraint firstItem="vpS-In-Pv3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7bN-Or-0je"/>
+                            <constraint firstItem="4ZR-Nh-S5b" firstAttribute="top" secondItem="vpS-In-Pv3" secondAttribute="bottom" constant="23.5" id="9mD-NF-7rk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tbu-ui-hJG" secondAttribute="trailing" constant="151" id="FIY-8V-ZV4"/>
+                            <constraint firstItem="4ZR-Nh-S5b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="Iiz-I5-dfh"/>
+                            <constraint firstItem="e3s-j8-DML" firstAttribute="leading" secondItem="TUU-Xp-Wjy" secondAttribute="trailing" constant="43.5" id="KH6-ll-RiT"/>
+                            <constraint firstItem="e3s-j8-DML" firstAttribute="top" secondItem="vpS-In-Pv3" secondAttribute="bottom" constant="225.5" id="L7G-V0-AzX"/>
+                            <constraint firstItem="gga-Fd-LHJ" firstAttribute="top" secondItem="vpS-In-Pv3" secondAttribute="bottom" constant="225.5" id="LaT-Tt-2rJ"/>
+                            <constraint firstItem="AAK-Z9-yu2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="QLd-ii-ZTX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ckC-xn-QU8" secondAttribute="trailing" constant="22" id="XQf-LU-btK"/>
+                            <constraint firstItem="vpS-In-Pv3" firstAttribute="top" secondItem="AAK-Z9-yu2" secondAttribute="bottom" constant="10" id="e9L-BS-CZ1"/>
+                            <constraint firstItem="TUU-Xp-Wjy" firstAttribute="top" secondItem="Tbu-ui-hJG" secondAttribute="bottom" constant="46" id="f73-PH-ce0"/>
+                            <constraint firstItem="Tbu-ui-hJG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="151" id="fUG-Mh-Ddb"/>
+                            <constraint firstItem="TUU-Xp-Wjy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hwt-Fx-yAT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ZR-Nh-S5b" secondAttribute="trailing" constant="129" id="iZC-WT-1oB"/>
+                            <constraint firstItem="ckC-xn-QU8" firstAttribute="top" secondItem="AAK-Z9-yu2" secondAttribute="bottom" constant="8" symbolic="YES" id="klN-kb-cG9"/>
+                            <constraint firstItem="AAK-Z9-yu2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q1V-Nk-HdX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AAK-Z9-yu2" secondAttribute="trailing" constant="20" id="qp0-Ta-thT"/>
+                            <constraint firstItem="Tbu-ui-hJG" firstAttribute="top" secondItem="4ZR-Nh-S5b" secondAttribute="bottom" constant="26" id="vgW-kK-Vr8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataOneButton" destination="gga-Fd-LHJ" id="g5f-56-cXF"/>
+                        <outlet property="dataThreeButton" destination="e3s-j8-DML" id="Pno-kx-bIt"/>
+                        <outlet property="dataTwoButton" destination="TUU-Xp-Wjy" id="Nbt-i4-ofF"/>
+                        <outlet property="saveButton" destination="Tbu-ui-hJG" id="UPg-x1-zcd"/>
+                        <outlet property="sensorDataLabel" destination="AAK-Z9-yu2" id="PTK-Ib-maL"/>
+                        <outlet property="stepCountActivator" destination="ckC-xn-QU8" id="N7J-FP-XhJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
